@@ -23,9 +23,9 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
-<img src="Assets\Images\weather.png" alt="">
+<img src="" alt="">
 
- <h2><a href="https://ssavane26.github.io/Handy-Weather-App/">Deployable Link!:</a></h2>
+ <h2><a href="">Deployable Link!:</a></h2>
 
 ## REFERENCES
 https://www.geeksforgeeks.org/how-to-get-the-value-of-text-input-field-using-javascript/# Handy-Weather-App-Redux
