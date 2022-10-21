@@ -28,13 +28,13 @@
   
 <div class="col-3">
 <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
- <div class="card-header">Today's Weather!</div>
+ <div class="card-header" id="selectedCity">Today's Weather!</div>
  <div class="card-body">
-  <h5 class="card-title">Current Date</h5>
-    <p class="card-text">Temp:</p>
-    <p class="card-text">Wind:</p>
-    <p class="card-text">Humidity:</p>
-    <p class="card-text">UV Index:</p>
+  <h5 class="card-title" id="currentDate">Current Date</h5>
+    <p class="card-text" id="fahrenheit">Temp:</p>
+    <p class="card-text" id="mph">Wind:</p>
+    <p class="card-text" id="percent">Humidity:</p>
+    <p class="card-text" id="uv">UV Index:</p>
     </div>
 </div>
 </div>
@@ -43,9 +43,11 @@
    <div class="card-header">Your 5 Day Weather Forecast!</div>
    <div class="card-body">
    <h5 class="card-title"></h5>
-   <p class="card-text"></p>
-   <p class="card-text"></p>
-   <p class="card-text"></p>
+   <p class="card-text" id="day1"></p>
+   <p class="card-text" id="day2"></p>
+   <p class="card-text" id="day3"></p>
+   <p class="card-text" id="day4"></p>
+   <p class="card-text" id="day5"></p>
    </div>
    </div>
   </div> 
