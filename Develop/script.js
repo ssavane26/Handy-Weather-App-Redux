@@ -41,7 +41,7 @@ function citySearchResults() {
                     // Todays Weather
                     document.getElementById("selectedCity").innerText = city.toUpperCase();
 
-                    var iconUrl = `https://openweathermap.org/img/w/${data.current.weather[0].icon}.png`;
+                    var iconUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
                     document.getElementById("icon").src = iconUrl;
 
                     document.getElementById("currentDate").innerText = moment.unix(data.current.dt).format("MM/DD/YYYY");
@@ -56,7 +56,7 @@ function citySearchResults() {
                     // 5 Day Weather
 
                     for (i = 1; i < 6; i++) {
-                        var date = moment.unix(data.daily[i].dt).format("MM/DD/YYYY");
+                        // var date = moment.unix(data.daily[i].dt).format("MM/DD/YYYY");
                         var iconUrl = `https://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png`;
                         const y = createWeeklyForecast(date, iconUrl, data.daily[i].temp.day, data.daily[i].wind_speed, data.daily[i].humidity);
                         document.getElementById("day" + i).innerHTML = "";
