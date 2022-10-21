@@ -31,10 +31,12 @@
  <div class="card-header" id="selectedCity">Today's Weather!</div>
  <div class="card-body">
   <h5 class="card-title" id="currentDate">Current Date</h5>
-    <p class="card-text" id="fahrenheit">Temp:</p>
-    <p class="card-text" id="mph">Wind:</p>
-    <p class="card-text" id="percent">Humidity:</p>
-    <p class="card-text" id="uv">UV Index:</p>
+  <ul id="properties">
+  <li>Temp: <span id="fahrenheit"></span></li>
+  <li>Wind: <span id="mph"></span></li>
+  <li>Humidity: <span id="percent"></span></li>
+  <li>UV Index: <span id="decimal"></span></li>
+</ul>
     </div>
 </div>
 </div>
@@ -66,5 +68,6 @@
 <footer class="gitlink"> 
   <a href="https://github.com/ssavane26?tab=repositories">Check Out The Rest of My Work!!!!</a> 
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="Develop\script.js"></script>
-    </html>
+</html>
