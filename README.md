@@ -25,7 +25,8 @@ THEN I am again presented with current and future conditions for that city
 ```
 <img src="Assets\Images\SiteScreenshot .png" alt="" width = 600 >
 
- <h2><a href="">Deployable Link!:</a></h2>
+ <h2><a href="https://ssavane26.github.io/Handy-Weather-App-Redux/">➡️Deployable Link!⬅️</a></h2>
+<br>
 
 ## REFERENCES
 https://www.geeksforgeeks.org/how-to-get-the-value-of-text-input-field-using-javascript/# Handy-Weather-App-Redux
