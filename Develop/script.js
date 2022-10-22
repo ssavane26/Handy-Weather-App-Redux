@@ -29,7 +29,7 @@ function citySearchResults() {
 
             console.log(data[0].lat);
             console.log(data[0].lon);
-
+//------------------------------------------------------------------//
         
             var weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`;
             fetch(weatherURL)
@@ -44,8 +44,10 @@ function citySearchResults() {
                     var iconUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
                     document.getElementById("icon").src = iconUrl;
 
-                    document.getElementById("currentDate").innerText = moment.unix(data.current.dt).format("MM/DD/YYYY");
-
+                    document.getElementById("currentDate").innerText = moment(new Date()).format("MM/DD/YYYY");
+                    
+                    //-------------------------------------------------------------------
+                    
                     document.getElementById("fahrenheit").innerText = data.current.temp + " °F";
                     document.getElementById("mph").innerText = data.current.wind_speed + " MPH";
                     document.getElementById("percent").innerText = data.current.humidity + " %";
@@ -56,7 +58,7 @@ function citySearchResults() {
                     // 5 Day Weather
 
                     for (i = 1; i < 6; i++) {
-                        // var date = moment.unix(data.daily[i].dt).format("MM/DD/YYYY");
+                        var date = moment.unix(data.daily[i].dt).format("MM/DD/YYYY");
                         var iconUrl = `https://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png`;
                         const y = createWeeklyForecast(date, iconUrl, data.daily[i].temp.day, data.daily[i].wind_speed, data.daily[i].humidity);
                         document.getElementById("day" + i).innerHTML = "";
@@ -80,7 +82,7 @@ function createWeeklyForecast(date, icon, temp, wind, humidity) {
 
     liDate.innerText = date;
     liIcon.setAttribute("src", icon);
-    liTemp.innerText = "Temperature: " + temp + " °F";
+    liTemp.innerText = "Temp: " + temp + " °F";
     liWind.innerText = "Wind: " + wind + " MPH";
     liHumidity.innerText = "Humidity: " + humidity + " %";
 
@@ -120,7 +122,7 @@ function searchHistory() {
             console.log(event.target.innerText);
             city = event.target.innerText;
             // this is the input being searched
-            searchWithCityValue();
+            citySearchResults();
         })
     }
     console.log(searchArray);
