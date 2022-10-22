@@ -1,3 +1,48 @@
+.section-title {
+    padding-bottom: 15px;
+    font-size: 50px;
+}
+
+.search {
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.forecast-header {
+    margin: 10px;
+}
+
+#forecast-cards {
+    justify-content: space-around;
+}
+
+.card-content {
+    margin: 30px;
+}
+
+.current-weather, .weather-input {
+    margin: 5px;
+}
+
+.weather-container {
+    margin: 150px auto;
+    background-color: #fff;
+    padding: 50px 50px;
+    border-radius: 10px;
+    opacity: 80%;
+}
+
+.card {
+    background-color: grey;
+}
+
+.btn {
+    background-color: #80b1da;
+}
+
 .gitlink {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     clear: both;
