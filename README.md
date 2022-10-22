@@ -23,9 +23,13 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
-<img src="" alt="">
+<img src="Assets\Images\SiteScreenshot .png" alt="" width = 600 >
 
  <h2><a href="">Deployable Link!:</a></h2>
 
 ## REFERENCES
 https://www.geeksforgeeks.org/how-to-get-the-value-of-text-input-field-using-javascript/# Handy-Weather-App-Redux
+
+https://openweathermap.org/forecast5 (API documentation)
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
